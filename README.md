@@ -19,7 +19,9 @@
             color: #234d20;
         }
 
-        /* แถบเมนู */
+        /* =========================
+           แถบเมนู
+        ========================= */
         nav {
             background-color: #2e7d32;
             padding: 18px 8%;
@@ -46,7 +48,9 @@
             color: #dcedc8;
         }
 
-        /* หน้าหลัก */
+        /* =========================
+           หน้าหลัก
+        ========================= */
         .hero {
             min-height: 90vh;
             display: flex;
@@ -54,6 +58,7 @@
             align-items: center;
             text-align: center;
             padding: 40px 20px;
+
             background: linear-gradient(
                 135deg,
                 #e8f5e9,
@@ -65,13 +70,20 @@
             max-width: 800px;
         }
 
+        /* รูปโปรไฟล์วงกลม */
         .profile-img {
             width: 180px;
             height: 180px;
+
             border-radius: 50%;
+
             object-fit: cover;
+
             border: 6px solid #2e7d32;
+
             margin-bottom: 25px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
         }
 
         .hero h1 {
@@ -91,22 +103,32 @@
             line-height: 1.8;
         }
 
+        /* ปุ่ม */
         .btn {
             display: inline-block;
             margin-top: 25px;
             padding: 12px 28px;
+
             background-color: #2e7d32;
             color: white;
+
             text-decoration: none;
+
             border-radius: 30px;
+
             font-weight: bold;
+
+            transition: 0.3s;
         }
 
         .btn:hover {
             background-color: #1b5e20;
+            transform: translateY(-3px);
         }
 
-        /* ส่วนต่าง ๆ */
+        /* =========================
+           ส่วนต่าง ๆ
+        ========================= */
         section {
             padding: 70px 10%;
         }
@@ -118,7 +140,9 @@
             margin-bottom: 40px;
         }
 
-        /* เกี่ยวกับฉัน */
+        /* =========================
+           เกี่ยวกับฉัน
+        ========================= */
         .about {
             background-color: white;
         }
@@ -126,16 +150,29 @@
         .about-box {
             max-width: 850px;
             margin: auto;
+
             background-color: #f1f8f1;
+
             padding: 35px;
+
             border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
             text-align: center;
+
             line-height: 2;
+
             font-size: 18px;
         }
 
-        /* เป้าหมายการศึกษา */
+        .about-box strong {
+            color: #1b5e20;
+        }
+
+        /* =========================
+           เป้าหมายการศึกษา
+        ========================= */
         .education {
             background-color: #e8f5e9;
         }
@@ -143,86 +180,131 @@
         .education-box {
             max-width: 850px;
             margin: auto;
+
             background: white;
+
             padding: 35px;
+
             border-left: 8px solid #2e7d32;
+
             border-radius: 15px;
+
             line-height: 2;
+
             font-size: 18px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
         }
 
         .education-box strong {
             color: #1b5e20;
         }
 
-        /* ความสามารถและงานอดิเรก */
+        /* =========================
+           ความสามารถและงานอดิเรก
+        ========================= */
         .skills {
             background-color: white;
         }
 
         .card-container {
             display: flex;
+
             justify-content: center;
+
             gap: 25px;
+
             flex-wrap: wrap;
         }
 
         .card {
             width: 260px;
+
             padding: 30px 20px;
+
             text-align: center;
+
             background-color: #f1f8f1;
+
             border-radius: 20px;
+
             border: 2px solid #a5d6a7;
+
             transition: 0.3s;
+
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
         }
 
         .card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 8px 20px rgba(46,125,50,0.2);
+
+            box-shadow: 0 8px 20px rgba(46, 125, 50, 0.2);
         }
 
         .card .icon {
             font-size: 45px;
+
             margin-bottom: 15px;
         }
 
         .card h3 {
             color: #2e7d32;
+
             margin-bottom: 10px;
         }
 
-        /* เป้าหมาย */
+        .card p {
+            font-size: 18px;
+        }
+
+        /* =========================
+           เป้าหมายในอนาคต
+        ========================= */
         .goal {
             background-color: #e8f5e9;
+
             text-align: center;
         }
 
         .goal p {
             max-width: 750px;
+
             margin: auto;
+
             font-size: 19px;
+
             line-height: 2;
         }
 
-        /* Footer */
+        /* =========================
+           Footer
+        ========================= */
         footer {
             background-color: #1b5e20;
+
             color: white;
+
             text-align: center;
+
             padding: 25px;
+
+            line-height: 1.8;
         }
 
-        /* รองรับมือถือ */
+        /* =========================
+           รองรับมือถือ
+        ========================= */
         @media (max-width: 768px) {
 
             nav {
                 flex-direction: column;
+
                 gap: 10px;
             }
 
             nav a {
                 margin-left: 10px;
+
                 margin-right: 10px;
             }
 
@@ -234,40 +316,74 @@
                 font-size: 18px;
             }
 
+            .profile-img {
+                width: 160px;
+
+                height: 160px;
+            }
+
             section {
                 padding: 50px 6%;
             }
+
+            section h2 {
+                font-size: 28px;
+            }
         }
+
     </style>
 </head>
 
 <body>
 
-    <!-- เมนู -->
+    <!-- =========================
+         เมนู
+    ========================= -->
     <nav>
+
         <h2>PORTFOLIO</h2>
 
         <div>
+
             <a href="#home">หน้าแรก</a>
+
             <a href="#about">เกี่ยวกับฉัน</a>
+
             <a href="#education">การศึกษา</a>
+
             <a href="#skills">ความสามารถ</a>
+
             <a href="#goal">เป้าหมาย</a>
+
         </div>
+
     </nav>
 
 
-    <!-- หน้าแรก -->
+    <!-- =========================
+         หน้าแรก
+    ========================= -->
     <section class="hero" id="home">
 
         <div class="hero-content">
 
-            <!-- ถ้ามีรูปตัวเอง ให้เปลี่ยนชื่อไฟล์เป็นรูปของเรา -->
-            <img src="profile.jpg" class="profile-img" alt="รูปณฐพร">
+            <!-- รูปโปรไฟล์ -->
+            <!-- ต้องนำไฟล์ IMG_5365.jpeg
+                 ไว้ในโฟลเดอร์เดียวกับ index.html -->
 
-            <h1>นางสาวณฐพร รัศมิทัต</h1>
+            <img 
+                src="IMG_5365.jpeg" 
+                class="profile-img" 
+                alt="รูปณฐพร"
+            >
 
-            <h3>นักเรียนชั้นมัธยมศึกษาปีที่ 6</h3>
+            <h1>
+                นางสาวณฐพร รัศมิทัต
+            </h1>
+
+            <h3>
+                นักเรียนชั้นมัธยมศึกษาปีที่ 6
+            </h3>
 
             <p>
                 โรงเรียนเซนต์โยเซฟทิพวัล
@@ -278,17 +394,23 @@
                 มหาวิทยาลัยเกษตรศาสตร์ บางเขน
             </p>
 
-            <a href="#about" class="btn">รู้จักฉันมากขึ้น</a>
+            <a href="#about" class="btn">
+                รู้จักฉันมากขึ้น
+            </a>
 
         </div>
 
     </section>
 
 
-    <!-- เกี่ยวกับฉัน -->
+    <!-- =========================
+         เกี่ยวกับฉัน
+    ========================= -->
     <section class="about" id="about">
 
-        <h2>เกี่ยวกับฉัน</h2>
+        <h2>
+            เกี่ยวกับฉัน
+        </h2>
 
         <div class="about-box">
 
@@ -313,37 +435,70 @@
     </section>
 
 
-    <!-- การศึกษา -->
+    <!-- =========================
+         การศึกษา
+    ========================= -->
     <section class="education" id="education">
 
-        <h2>เป้าหมายการศึกษาต่อ</h2>
+        <h2>
+            เป้าหมายการศึกษาต่อ
+        </h2>
 
         <div class="education-box">
 
             <p>
-                <strong>มหาวิทยาลัยที่ต้องการเข้าศึกษา</strong><br>
-                มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตบางเขน
+
+                <strong>
+                    มหาวิทยาลัยที่ต้องการเข้าศึกษา
+                </strong>
+
+                <br>
+
+                มหาวิทยาลัยเกษตรศาสตร์
+                วิทยาเขตบางเขน
+
             </p>
 
             <br>
 
             <p>
-                <strong>คณะ</strong><br>
+
+                <strong>
+                    คณะ
+                </strong>
+
+                <br>
+
                 คณะบริหารธุรกิจ
+
             </p>
 
             <br>
 
             <p>
-                <strong>สาขาวิชา</strong><br>
+
+                <strong>
+                    สาขาวิชา
+                </strong>
+
+                <br>
+
                 การบัญชี
+
             </p>
 
             <br>
 
             <p>
-                <strong>ภาควิชา</strong><br>
+
+                <strong>
+                    ภาควิชา
+                </strong>
+
+                <br>
+
                 ภาควิชาบัญชี
+
             </p>
 
         </div>
@@ -351,19 +506,29 @@
     </section>
 
 
-    <!-- ความสามารถและงานอดิเรก -->
+    <!-- =========================
+         ความสามารถและงานอดิเรก
+    ========================= -->
     <section class="skills" id="skills">
 
-        <h2>ความสามารถและงานอดิเรก</h2>
+        <h2>
+            ความสามารถและงานอดิเรก
+        </h2>
 
         <div class="card-container">
 
+
             <!-- ความสามารถพิเศษ -->
+
             <div class="card">
 
-                <div class="icon">🧁</div>
+                <div class="icon">
+                    🧁
+                </div>
 
-                <h3>ความสามารถพิเศษ</h3>
+                <h3>
+                    ความสามารถพิเศษ
+                </h3>
 
                 <p>
                     ทำขนม
@@ -372,12 +537,17 @@
             </div>
 
 
-            <!-- งานอดิเรก 1 -->
+            <!-- งานอดิเรก ฟังเพลง -->
+
             <div class="card">
 
-                <div class="icon">🎧</div>
+                <div class="icon">
+                    🎧
+                </div>
 
-                <h3>งานอดิเรก</h3>
+                <h3>
+                    งานอดิเรก
+                </h3>
 
                 <p>
                     ฟังเพลง
@@ -386,12 +556,17 @@
             </div>
 
 
-            <!-- งานอดิเรก 2 -->
+            <!-- งานอดิเรก ดูหนัง -->
+
             <div class="card">
 
-                <div class="icon">🎬</div>
+                <div class="icon">
+                    🎬
+                </div>
 
-                <h3>งานอดิเรก</h3>
+                <h3>
+                    งานอดิเรก
+                </h3>
 
                 <p>
                     ดูหนัง
@@ -399,33 +574,47 @@
 
             </div>
 
+
         </div>
 
     </section>
 
 
-    <!-- เป้าหมาย -->
+    <!-- =========================
+         เป้าหมาย
+    ========================= -->
     <section class="goal" id="goal">
 
-        <h2>เป้าหมายในอนาคต</h2>
+        <h2>
+            เป้าหมายในอนาคต
+        </h2>
 
         <p>
+
             ดิฉันมีความมุ่งมั่นที่จะเข้าศึกษาต่อ
             คณะบริหารธุรกิจ สาขาวิชาการบัญชี
             ภาควิชาบัญชี มหาวิทยาลัยเกษตรศาสตร์
-            วิทยาเขตบางเขน เพื่อพัฒนาความรู้
+            วิทยาเขตบางเขน
+
+            เพื่อพัฒนาความรู้
             ความสามารถ และประสบการณ์ด้านการบัญชี
-            และนำความรู้ไปประยุกต์ใช้ในการประกอบอาชีพในอนาคต
+
+            และนำความรู้ไปประยุกต์ใช้
+            ในการประกอบอาชีพในอนาคต
+
         </p>
 
     </section>
 
 
-    <!-- ส่วนท้าย -->
+    <!-- =========================
+         ส่วนท้าย
+    ========================= -->
     <footer>
 
         <p>
-            © 2026 Portfolio | นางสาวณฐพร รัศมิทัต
+            © 2026 Portfolio |
+            นางสาวณฐพร รัศมิทัต
         </p>
 
         <p>
@@ -433,6 +622,7 @@
         </p>
 
     </footer>
+
 
 </body>
 </html>
